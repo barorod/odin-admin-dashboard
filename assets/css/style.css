@@ -1,1 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --color100: #ffffff;
+  --color200: #f8f9fa;
+  --color300: #e9ecef;
+  --color400: #ced4da;
+  --color500: #adb5bd;
+  --color600: #6c757d;
+  --color700: #495057;
+  --color800: #343a40;
+  --color900: #212529;
+
+  --accent-primary: #007bff;
+  --accent-secondary: #6c757d;
+  --accent-success: #28a745;
+  --accent-danger: #dc3545;
+  --accent-warning: #ffc107;
+  --accent-info: #17a2b8;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--accent-primary);
+  padding: 8px;
+}
+
+.sidebarGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.logo,
+.menu,
+.menu2 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebarGrid img {
+  align-self: center;
+  justify-self: center;
+  filter: invert(1);
+}
+
+.sidebarGrid p {
+  align-self: center;
+  justify-self: self-start;
+  line-height: 1.8;
+  font-weight: 600;
+  color: var(--color100);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu,
+.menu2 {
+  row-gap: 5px;
+}
