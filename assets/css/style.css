@@ -19,11 +19,18 @@
   --accent-info: #17a2b8;
 }
 
+body {
+  max-width: 1070px;
+  max-height: 816px;
+  margin: 0 auto;
+  background-color: var(--color900);
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
-  height: 100vh;
+  height: 816px;
 }
 
 .sidebar {
